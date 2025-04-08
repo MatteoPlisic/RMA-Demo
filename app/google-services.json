@@ -1,0 +1,76 @@
+{
+  "project_info": {
+    "project_number": "132384996091",
+    "project_id": "reverseclassroom-e09b2",
+    "storage_bucket": "reverseclassroom-e09b2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:132384996091:android:4150269bc12755dddace5e",
+        "android_client_info": {
+          "package_name": "com.example.reverseclassroom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "132384996091-5g4h7bh47lnnmfbco23ormscsov8o4b0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHfFLEc8ObzL_ji0BfcGxnLFIvDuEqPnY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "132384996091-5g4h7bh47lnnmfbco23ormscsov8o4b0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:132384996091:android:5b2f257aa55c1c20dace5e",
+        "android_client_info": {
+          "package_name": "com.example.reverseclassroomdemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "132384996091-oqug1q22osgueo0965b2k3odcfvo3b3k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.reverseclassroomdemo",
+            "certificate_hash": "8b5e93f7b31e150ba502cf04600dd2473f02f2a5"
+          }
+        },
+        {
+          "client_id": "132384996091-5g4h7bh47lnnmfbco23ormscsov8o4b0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHfFLEc8ObzL_ji0BfcGxnLFIvDuEqPnY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "132384996091-5g4h7bh47lnnmfbco23ormscsov8o4b0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
