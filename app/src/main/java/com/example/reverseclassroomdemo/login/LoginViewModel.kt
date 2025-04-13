@@ -69,11 +69,11 @@ class LoginViewModel(private val context: Context) : ViewModel() {
                 val credential = result.credential
                 val googleIdTokenCredential = GoogleIdTokenCredential.createFrom(credential.data)
                 val googleIdToken = googleIdTokenCredential.idToken
-
+                val email = googleIdTokenCredential.displayName
                 Log.i("LoginViewModel", "Google ID Token: $googleIdToken")
 
                 Toast.makeText(context, "Google ID Token: $googleIdToken", Toast.LENGTH_SHORT).show()
-
+                Toast.makeText(context, "Welcome $email", Toast.LENGTH_SHORT).show()
             } catch (e: Exception) {
                 Log.e("LoginViewModel", "Error getting credential", e)
             }

@@ -16,7 +16,7 @@ fun CitiesScreen() {
     var cities by remember { mutableStateOf<List<City>>(emptyList()) }
     var errorMessage by remember { mutableStateOf<String?>(null) }
 
-    // Form state
+
     var name by remember { mutableStateOf("") }
     var country by remember { mutableStateOf("") }
     var populationText by remember { mutableStateOf("") }
@@ -25,7 +25,7 @@ fun CitiesScreen() {
 
     val db = FirebaseFirestore.getInstance()
 
-    // Real-time listener
+
     DisposableEffect(Unit) {
         val listener = db.collection("City")
             .addSnapshotListener { snapshot, error ->

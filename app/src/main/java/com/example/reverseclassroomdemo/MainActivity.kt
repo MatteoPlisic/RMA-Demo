@@ -40,39 +40,15 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-           /*LoginScreen(
+           LoginScreen(
                 modifier = Modifier.fillMaxSize(),
                 viewModel = LoginViewModel(LocalContext.current)
-            )*/
+            )
             //CitiesScreen()
             //StudentsScreen()
-            MoviesScreen()
+            //MoviesScreen()
         }
     }
 }
 
-@Composable
-fun AppNavigation(isUserLoggedIn: Boolean) {
-    val navController = rememberNavController()
-
-    NavHost(
-        navController = navController,
-        startDestination = "login"
-    ) {
-        composable("login") {
-            LoginScreen(modifier = Modifier.fillMaxSize(),
-                viewModel = LoginViewModel(LocalContext.current))
-        }
-
-        composable("students") {
-            StudentsScreen()
-        }
-        composable("cities") {
-            CitiesScreen()
-        }
-        composable("Movies") {
-            MoviesScreen()
-        }
-    }
-}
 
