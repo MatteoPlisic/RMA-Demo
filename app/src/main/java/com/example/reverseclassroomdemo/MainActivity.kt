@@ -28,6 +28,7 @@ import com.example.reverseclassroomdemo.login.LoginViewModel
 
 import com.example.reverseclassroomdemo.students.StudentsScreen
 import com.example.reverseclassroomdemo.ui.screens.CitiesScreen
+import com.example.reverseclassroomdemo.movies.MoviesScreen
 
 import com.example.reverseclassroomdemo.ui.theme.ReverseClassroomDemoTheme
 import com.google.android.libraries.identity.googleid.GetGoogleIdOption
@@ -39,12 +40,13 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-           /* LoginScreen(
+           /*LoginScreen(
                 modifier = Modifier.fillMaxSize(),
                 viewModel = LoginViewModel(LocalContext.current)
             )*/
-            CitiesScreen()
+            //CitiesScreen()
             //StudentsScreen()
+            MoviesScreen()
         }
     }
 }
@@ -67,6 +69,9 @@ fun AppNavigation(isUserLoggedIn: Boolean) {
         }
         composable("cities") {
             CitiesScreen()
+        }
+        composable("Movies") {
+            MoviesScreen()
         }
     }
 }
