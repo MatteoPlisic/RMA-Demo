@@ -141,5 +141,7 @@ fun CitiesScreen() {
         ) {
             Text(if (isSaving) "Saving..." else "Add City")
         }
+
+        Spacer(modifier = Modifier.height(15.dp))
     }
 }

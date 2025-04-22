@@ -31,6 +31,7 @@ class LoginViewModel(private val context: Context) : ViewModel() {
                 if (task.isSuccessful) {
                     Log.d("LoginViewModel", "Login successful: ${task.result?.user?.email}")
                     Toast.makeText(context, "Welcome ${task.result?.user?.email}", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(context, task.result?.user?.uid, Toast.LENGTH_SHORT).show()
                 } else {
                     Log.e("LoginViewModel", "Login failed", task.exception)
                     Toast.makeText(context, "Login failed: ${task.exception?.message}", Toast.LENGTH_SHORT).show()

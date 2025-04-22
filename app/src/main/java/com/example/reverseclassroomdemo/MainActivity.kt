@@ -40,13 +40,14 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-           LoginScreen(
+            //odkomentirati dio koji se želi prikazati
+           /*LoginScreen(
                 modifier = Modifier.fillMaxSize(),
                 viewModel = LoginViewModel(LocalContext.current)
-            )
+            )*/
             //CitiesScreen()
             //StudentsScreen()
-            //MoviesScreen()
+            MoviesScreen()
         }
     }
 }
